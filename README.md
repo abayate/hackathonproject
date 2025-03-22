@@ -21,7 +21,8 @@ Vite + React
 - Why we chose React: Its component-based architecture simplifies UI design and updates.
 - Why we chose Vite: Extremely fast dev server, zero-config out of the box, and easy to deploy.
 
-🧪 VirusTotal
+
+// 🧪 VirusTotal
 What It Is: A free service that checks URLs (and files) against dozens of antivirus engines.
 
 How We Use It:
