@@ -1,0 +1,276 @@
+/* Animated gradient background (unchanged) */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Body with full-window gradient animation */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(270deg, #ade2ff, #ffa2b0, #ffc699);
+  background-size: 600% 600%;
+  animation: gradientShift 20s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Main container with a frosted-glass style */
+.app-container {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+/* Title/header area */
+.title-container {
+  background: rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Chat actions below the title */
+.chat-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.phishbait-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Action buttons below the title */
+.action-btn {
+  background: #ffffff;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.action-btn:hover {
+  background: #f5f5f5;
+  transform: scale(1.02);
+}
+
+/* Tabs bar */
+.tabs {
+  display: flex;
+  background: rgba(255, 255, 255, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #444;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tab-btn.active {
+  background: rgba(255, 255, 255, 0.6);
+  color: #000;
+  font-weight: bold;
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #222;
+}
+
+/* Chatbox container */
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  height: 500px; /* consistent chatbox size */
+}
+
+/* Chat messages wrapper */
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+/* Bubbles styling (iMessage-like) */
+.chat-message {
+  display: inline-block;
+  max-width: 70%;
+  word-wrap: break-word;
+  margin: 6px 8px;
+  padding: 10px 14px;
+  font-size: 15px;
+  line-height: 1.4;
+  border-radius: 18px;
+  position: relative; /* so the bubble tail can be positioned */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Bot bubble: light gray on the left */
+.chat-message.bot {
+  background: #e5e5ea; /* iMessage “gray” color */
+  color: #1c1c1e;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+/* Bot bubble tail on the left */
+.chat-message.bot::after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-right-color: #e5e5ea;
+  border-left: 0;
+}
+
+/* User bubble: blue on the right */
+.chat-message.user {
+  background: #007aff; /* iMessage “blue” color */
+  color: #fff;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 12px; /* extra spacing from right edge */
+}
+
+/* User bubble tail on the right */
+.chat-message.user::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-left-color: #007aff;
+  border-right: 0;
+}
+
+/* Chat form area */
+.chat-form {
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.chat-input {
+  flex: 1;
+  border: none;
+  border-radius: 20px;
+  padding: 12px;
+  font-size: 15px;
+  background: #ffffffcc;
+  color: #333;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.chat-input:focus {
+  box-shadow: 0 0 5px rgba(100, 100, 255, 0.4);
+}
+
+.send-btn {
+  background: #4a90e2;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.send-btn:hover {
+  background: #357ab8;
+  transform: scale(1.03);
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+  .app-container {
+    margin: 10px;
+    width: 95%;
+  }
+  .chatbox {
+    height: 400px; /* reduce height for tablets */
+  }
+  .action-btn {
+    font-size: 13px;
+  }
+  .tab-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    margin: 8px;
+    width: 100%;
+  }
+  .chatbox {
+    height: 350px; /* smaller height for phones */
+    padding: 15px;
+  }
+  .title-container {
+    padding: 15px;
+  }
+  .tab-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .phishbait-title {
+    font-size: 24px;
+  }
+  .chat-actions {
+    margin-top: 5px;
+  }
+  .action-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  .chat-input,
+  .send-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
