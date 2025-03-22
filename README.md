@@ -1,1 +1,3 @@
-# Hackathon Project
+# KeanUHackThis Project 
+# By: Anthony Bayate Jr, David
+
