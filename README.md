@@ -21,19 +21,42 @@ Vite + React
 - Why we chose React: Its component-based architecture simplifies UI design and updates.
 - Why we chose Vite: Extremely fast dev server, zero-config out of the box, and easy to deploy.
 
-APIs
-You might integrate URL parsing libraries to handle user inputs.
+🧪 VirusTotal
+What It Is: A free service that checks URLs (and files) against dozens of antivirus engines.
 
-Some external phishing detection APIs or machine learning models could be used to analyze the URL’s threat level.
+How We Use It:
 
-(Adjust this section to list any real libraries or services you used for detection.)
+When a user enters a URL, we send it to VirusTotal’s API.
 
+If many antivirus engines identify that URL as unsafe, we show a warning.
 
+Benefits: Provides fast, multi-engine checks for known malware and phishing threats.
+
+🧠 PhishTank
+What It Is: A community-based database of reported phishing websites.
+
+How We Use It:
+
+We compare the user-submitted URL to PhishTank’s database.
+
+If it’s listed as a confirmed phishing site, we immediately warn the user.
+
+Benefits: Since it’s crowdsourced, it quickly flags new or trending phishing sites.
+
+🛡️ Google Safe Browsing
+What It Is: Google’s service that maintains an updated list of unsafe and deceptive sites.
+
+How We Use It:
+
+We send the URL to the Google Safe Browsing API.
+
+If Google has flagged that site for malware or phishing, we alert the user.
+
+Benefits: Offers up-to-date warnings used by many popular web browsers.
 
 
 How It Works
 - User Input: The user types or pastes a URL into the chatbot interface.
-
 Validation/Detection:
 - The input URL is either sent to a phishing detection API, or your code checks the URL against patterns, lists, or basic heuristics.
 
