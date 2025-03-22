@@ -22,7 +22,10 @@ Vite + React
 - Why we chose Vite: Extremely fast dev server, zero-config out of the box, and easy to deploy.
 
 
-// 🧪 VirusTotal
+
+APIs Used
+
+- 🧪 VirusTotal
 What It Is: A free service that checks URLs (and files) against dozens of antivirus engines.
 
 How We Use It:
@@ -33,7 +36,7 @@ If many antivirus engines identify that URL as unsafe, we show a warning.
 
 Benefits: Provides fast, multi-engine checks for known malware and phishing threats.
 
-🧠 PhishTank
+- 🧠 PhishTank
 What It Is: A community-based database of reported phishing websites.
 
 How We Use It:
@@ -44,7 +47,7 @@ If it’s listed as a confirmed phishing site, we immediately warn the user.
 
 Benefits: Since it’s crowdsourced, it quickly flags new or trending phishing sites.
 
-🛡️ Google Safe Browsing
+- 🛡️ Google Safe Browsing
 What It Is: Google’s service that maintains an updated list of unsafe and deceptive sites.
 
 How We Use It:
