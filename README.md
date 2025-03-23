@@ -29,56 +29,52 @@ Built with **React + Vite**, the interface is clean, responsive, and easy to use
 
 <hr>
 
-<h2>🛠️ Tools & Technologies</h2>
+## 🛠️ Tools & Technologies
 
-<h3>🖥️ Development Environment</h3>
-<ul>
-  <li><strong>Visual Studio Code (VS Code):</strong> Popular IDE with great support for JavaScript and React.</li>
-</ul>
+### 🖥️ Development Environment  
+- **Visual Studio Code (VS Code)**  
+  Popular and lightweight IDE with strong support for JavaScript, React, and modern frontend development.
 
-<h3>⚛️ React + ⚡ Vite</h3>
-<ul>
-  <li><strong>React:</strong> JavaScript library for building user interfaces.</li>
-  <li><strong>Vite:</strong> Lightweight, fast build tool with hot-reload support.</li>
-</ul>
+### ⚛️ React + ⚡ Vite  
+- **React**: A JavaScript library for building responsive, component-based user interfaces.  
+- **Vite**: A fast, modern build tool that provides instant hot-reload and optimized performance for React apps.
 
-<hr>
+---
 
-<h2>🔌 APIs Integrated</h2>
+## 🔌 Simulated API Checks *(For Educational Use)*
 
-<h3>🧪 VirusTotal</h3>
-<p>
-  Free service that checks URLs against multiple antivirus engines.<br>
-  <strong>Use:</strong> Sends URL to VirusTotal API; flags if identified as unsafe.
-</p>
+> PhishBait simulates how real-world phishing detection works using mock responses from popular threat intelligence services.
 
-<h3>🧠 PhishTank</h3>
-<p>
-  Community-based phishing database.<br>
-  <strong>Use:</strong> Compares URL to known phishing sites; warns user immediately.
-</p>
+- 🧪 **VirusTotal (Simulated)**  
+  Mimics scanning the URL against multiple antivirus engines and blacklists.
 
-<h3>🛡️ Google Safe Browsing</h3>
-<p>
-  Maintains a list of known malicious or deceptive websites.<br>
-  <strong>Use:</strong> Checks URL and alerts if flagged by Google.
-</p>
+- 🧠 **PhishTank (Simulated)**  
+  Compares the URL against a database of known phishing sites.
 
-<hr>
+- 🛡️ **Google Safe Browsing (Simulated)**  
+  Emulates checking the URL against Google’s list of deceptive and harmful sites.
 
-<h2>🔍 How It Works</h2>
-<ol>
-  <li><strong>User Input:</strong> User enters a URL into the chatbot.</li>
-  <li><strong>Detection:</strong> The URL is checked against VirusTotal, PhishTank, and Google Safe Browsing APIs.</li>
-  <li><strong>Output:</strong> The chatbot responds with "Safe" or "Potentially Malicious."</li>
-</ol>
+---
 
-<hr>
+## 🔍 How It Works
 
-<h2>🧩 Why It Matters</h2>
-<p>
-  Phishing is a top cybersecurity threat today. This tool empowers users to protect themselves—no technical background required.
-</p>
-<p>
-  <strong>Our mission:</strong> Make cybersecurity more accessible by building real-world, hands-on tools.
-</p>
+1. **User Input**:  
+   The user selects or enters a URL into the chatbot interface.
+
+2. **Detection Phase** *(Simulated)*:  
+   The system "checks" the link using mock responses based on whether it’s a known safe or unsafe link.
+
+3. **Chatbot Response**:  
+   The chatbot returns a result:
+   - ✅ "This link appears safe."
+   - 🔴 "This link appears to be unsafe based on simulated scan results."
+
+---
+
+## 🧩 Why It Matters
+
+Phishing is one of the most common cyber threats worldwide. Many users click harmful links without realizing the risk.  
+**PhishBait** teaches how phishing detection works in a safe, simulated environment—making cybersecurity **more accessible** to beginners and non-technical users.
+
+> 🎯 **Our Mission**: Build real-world, hands-on tools to raise cybersecurity awareness and help users spot phishing threats before they click.
+
