@@ -5,27 +5,27 @@
 
 <h2>🧠 Overview</h2>
 <p>
-  <strong>PhishBait</strong> is a web application that hosts an <strong>interactive chatbot</strong> 
-  where users can enter a URL to determine whether it’s likely to be phishing or safe.
+  <strong>PhishBait</strong> is a beginner-friendly phishing <strong> interactive chatbot </strong> and <strong> detection tool </strong> built to help users check whether a URL is safe or malicious. The program provides <strong>real-time link analysis </strong> by simulating API checks (like VirusTotal, PhishTank, and Google Safe Browsing) to flag dangerous links.
 </p>
 <p>
   Phishing is a form of cyberattack that tricks users into revealing sensitive information 
   (usernames, passwords, credit card numbers) or installing malware. This project provides 
-  a <strong>real-world cybersecurity tool</strong> to help users identify suspicious websites.
+  a <strong> real-world cybersecurity tool</strong> to help users identify suspicious websites.
 </p>
 
 <hr>
 
-<h2>🚀 Key Features</h2>
+## 🚀 Key Features
 
-<h3>✅ Phishing Detection Chatbot</h3>
-<p>Users enter a URL, and the chatbot evaluates and responds with its risk level.</p>
+### ✅ Phishing Detection Chatbot  
+An interactive chatbot that allows users to test URLs by selecting from known safe and unsafe links. The chatbot analyzes each link and responds with its risk level.
 
-<h3>⚡ Real-Time Feedback</h3>
-<p>Fast results help users decide if a site is safe—before clicking.</p>
+### ⚡ Real-Time Risk Evaluation  
+Instant feedback simulates how threat intelligence tools (like VirusTotal or Google Safe Browsing) flag malicious links—helping users make safe decisions before clicking.
 
-<h3>🧭 Simple Interface</h3>
-<p>Built with <strong>React</strong>, the interface is intuitive, accessible, and beginner-friendly.</p>
+### 🧭 Beginner-Friendly Interface  
+Built with **React + Vite**, the interface is clean, responsive, and easy to use—ideal for learners and cybersecurity awareness training.
+
 
 <hr>
 
