@@ -1,3 +1,5 @@
+![light mode screenshot](https://github.com/user-attachments/assets/e13f9dd5-e2a5-4097-8743-fcb91c8f9f38)
+
 <h1>💻 KeanUHackThis Project</h1>
 <p><strong>By:</strong> Anthony Bayate Jr, David Arosemena, Aboluwarin Songonuga</p>
 
