@@ -5,7 +5,7 @@
 
 <h2>🧠 Overview</h2>
 <p>
-  <strong>KeanUHackThis</strong> is a web application that hosts an <strong>interactive chatbot</strong> 
+  <strong>PhishBait</strong> is a web application that hosts an <strong>interactive chatbot</strong> 
   where users can enter a URL to determine whether it’s likely to be phishing or safe.
 </p>
 <p>
